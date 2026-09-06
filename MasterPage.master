@@ -1,0 +1,571 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>KandJ</title>
+
+                <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css"> 
+    <link runat="server" rel="icon" href="~/favicon.ico" type="image/ico"/>
+	 <link runat="server" rel="shortcut icon" href="~/favicon.ico" type="image/x-icon"/>
+
+    <style>
+        .background-text {
+  color:transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: url("images/123.png");
+  background-size: 120%;  
+  font-size:10vw;
+  font-family:'Arial Black', Times, serif;
+  text-align:center;font-weight:bold;
+
+ 
+}
+
+
+        .bgdiv {
+        
+          background: url(images/footer3.png) no-repeat center right; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+        border-top:solid 1px gray;
+      
+        }
+                .bgdivhead {
+        
+          background: url(images/bg1.png) no-repeat center right; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:650px;
+        border-top:solid 1px gray;
+        }
+
+        .tbfooter {
+        
+            width:100%;
+            text-align:center;
+            border-radius:8px;
+            background-color:#0000003d;
+            
+       height:900px;
+        font-size:23px;
+        color:#ff8f00;
+        
+        
+        }
+
+            .tbfooter td {
+            text-align:left;
+            padding-left:20px;
+            }
+            * {
+  margin: 0;
+  padding: 0;
+}
+
+
+ .container1 {
+  position: relative;
+  width: 100vw;
+
+}
+
+
+
+/* background-color and color should be the same as the below otherwise it won't work */
+	.container1 > .text {
+		inset: 0;
+		display: grid;
+		place-items: center;
+		background-color: #0000008f;
+		color: #fff;
+		font-weight: 900;
+		font-size: 10vw;
+		font-family: sans-serif;
+		/* Mix Blend Mode does the all magic */
+		mix-blend-mode: multiply;
+		user-select: none;
+		text-align: center;
+		max-height: 400px;
+	}
+
+
+	textarea {
+		width: 100%;
+		padding: 12px 20px;
+	}
+
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.container1 > .text {
+	
+		max-height: 150px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ 	.container1 > .text {
+	
+		max-height: 180px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  	.container1 > .text {
+	
+		max-height: 200px;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  	.container1 > .text {
+	
+		max-height: 400px;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  	.container1 > .text {
+	
+		max-height: 400px;
+	}
+}
+
+
+
+    </style>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+
+
+    <form id="form1" runat="server">
+
+               
+
+     <div  style="width:100%;background-color:black;" class="owl-lazy bgdivhead wow bounceInDown">
+         	
+
+        
+         </div>
+    
+
+        
+
+
+        <div class="header">
+
+
+    <div class="wrapper">
+        	  	<div class="container head">
+			
+	  	</div>
+	  	<div class="topnav" style="background-color:black;margin-top:-10px;">
+	  		<div class="container" >
+	  			<label for="nav-trigger" class="menu-trigger"><i class="fas fa-bars"></i></label>
+	  			<input type="checkbox" id="nav-trigger" />
+			
+	  			<ul class="nav justify-content-center" style="padding:30px;">
+                      <li class="wow slideInUp"><a href="Default.aspx"> <i class="fas fa-home"></i>Home </a></li>
+	  				<li class="wow slideInUp">
+                          <a href="contactus.aspx"> <i class="fas fa-phone-volume">Contact Me </i></a>
+                       
+	  				</li>
+
+                    <li class="wow slideInUp">
+                          <a href="aboutus.aspx"> <i class="fas fa-bell">About Me </i></a>
+                        
+	  				</li>
+                    <li class="wow slideInUp">
+                          <a href="historyandphilosophy.aspx"> <i class="fas fa-bullhorn" style="color:white;">History and Philosophy</i></a>
+                        
+	  				</li>
+	  			</ul>
+
+	  		</div>
+	  	</div>
+
+        
+
+    </div>
+
+       
+              <div class="container1">
+                <textarea class="text" >KICKBOXING</textarea>
+            </div>   
+            
+    
+
+</div>
+
+
+
+        <%-- cat --%>
+
+        <div class="container-fluid cat">
+	<%--		<h1 class="head wow zoomIn"> <span class="wow zoomIn" data-wow-delay="1s"> Categories </span> </h1>--%>
+            <br />
+            <br />
+			<div class="cats owl-carousel owl-theme head wow zoomIn">
+				<div >
+					<a id="IdRing" runat="server" href="Eduction.aspx"><img data-src="images/boxing-corrected-01.png" class="lazy" />
+					<h3 class="title"> <span>Education</span> </h3>
+                     
+					</a>
+				</div>
+				<div >
+                  <a id="idErring" href="selfdefence.aspx" runat="server">  <img data-src="images/7075551_preview.png" class="lazy" />
+					<h3 class="title"> <span>Self-Defence</span> </h3>
+                     
+                  </a>
+				</div>
+                <div >
+                  <a id="A2" runat="server" href="kandj.aspx">  <img data-src="images/judo.png" class="lazy" />
+					<h3 class="title"> <span>KICKBOX & JUDO</span> </h3>
+                     
+                  </a>
+				</div>
+				<div >
+                    <a id="IdNecklaces" runat="server" href="Excercise.aspx"><img data-src="images/cxcercise.png" class="lazy" />
+					<h3 class="title"> <span>Excercise</span> </h3>
+
+                    </a>
+				</div>
+				<div >
+                  <a id="IdSets" runat="server" href="strugglepolitics.aspx">  <img data-src="images/polotic.png" class="lazy" />
+					<h3 class="title"> <span>struggle politics</span> </h3>
+                     
+                  </a>
+				</div>
+                <div >
+                  <a id="A1" href="clothingandequipment.aspx">  <img data-src="images/clothing.png" class="lazy" />
+					<h3 class="title"> <span>Equipment & Clothing</span> </h3>
+                     
+                  </a>
+				</div>
+			</div>
+
+            <hr style="background-color:gray;" />
+
+		</div>
+
+
+        <%-- end --%>
+
+
+
+
+   
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+            <div class="row">
+            <div style="margin-top:20px;margin-bottom:20px;">
+              
+                
+            </div>
+        </div>
+
+
+               <div class="container-fluid">
+                     
+                <div class="row">
+
+                    <div class="col-md-12">
+   <div class="background-text wow slideInDown">KICKBOXING</div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="row"> 
+            <div style="margin-top:20px;margin-bottom:20px;">
+              
+                
+            </div>
+        </div>
+
+            <%-------------------------------------- Footer ------------------------------ --%>
+        <div class="pre-footer">
+          
+            <div class="holder">
+		<%--  <img src="" class="logo img-fluid mx-auto d-block lazy"   />--%>
+			<div class="ontainer-fluid bgdiv" >
+                
+                <div class="row">
+                    <div class="col-md-12" style="text-align:left;scroll-behavior:auto;">
+                                   <table class="" style="margin-left:auto;margin-right:auto;background-color:#0000006b;margin-top:9%;width:90%;border-radius:30px;" >
+                         <thead>
+                             
+                             <tr><td colspan="2"></td></tr>
+                         </thead>
+                     
+                                       
+                          <tr>
+                             <td style="color:white;">SOCIAL NETWORKS </td>
+                            <td> 
+                                <a href="#"><img src="images/facebook.png" width="50" height="50" /></a>
+                                <a href="instagram://user?username={USERNAME}"><img src="images/instagram.png" width="50" height="50" /></a>
+                                 <a href="#"><img src="images/whatsapp.png" width="50" height="50" /></a>
+                            </td>
+                         </tr>
+
+                         <tr>
+                             <td style="color:white;">Email:</td>
+                            <td>samsamzahedshekarabi@gmail.com</td>
+                         </tr>
+
+                          <tr>
+                             <td style="color:white;">consultation</td>
+                            <td> 
+                                To receive free consultation, you can use the link <a href="contactus.aspx">contact us</a> or call the phone number +989127218396 provided
+                            </td>
+                         </tr>
+
+
+                               <tr>
+                             <td style="color:white;">MMA News</td>
+                            <td> 
+                               mixed martial arts (MMA) news, events, and information in the <a href="https://www.sherdog.com/">sherdog</a> website 
+                            </td>
+                         </tr>
+
+
+                                                   <tr>
+                             <td style="color:white;">Kickboxing and Judo (K&J)</td>
+                            <td> 
+                             This website tries to provide you, the students, with useful information by introducing resources and experiences gained.
+                            </td>
+                         </tr>
+
+                                                       <tr>
+                             <td style="color:white;">Suggestions and criticisms</td>
+                            <td> 
+                               
+                             Please share your suggestions or criticisms with us through the button
+                                 <input type="button" class="btn btn-dark" value="share" data-toggle="modal" data-target="#exampleModal" />
+                            </td>
+                         </tr>
+
+                                                                     <tr>
+                   
+                            <td colspan="2" style="text-align:center;">
+                                <hr style="background-color:white;width:70%;margin-left:auto;margin-right:auto;" />
+                                <a href="https://kickboxingclub.ir/kicklightkickboxing/"><img src="images/kicklight.png" width="80" height="80" /></a>                 
+                                <a href="https://irmaaf.ir/"><img src="images/fed.png" width="80" height="80" /></a>
+                                 <a href="https://razminews.ir/%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D9%88%D8%A7%DA%A9%D9%88-%D8%B3%D9%85%DB%8C%D9%86%D8%A7%D8%B1-%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86-%D8%B1%D8%A7-%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1-%DA%A9%D8%B1/"><img src="images/wako.png" width="80" height="80" /></a>
+                                 <a href="https://wako.sport/"><img src="images/wako1.png" width="80" height="80" /></a>
+                            </td>
+                                             
+                         </tr>
+
+                     </table>
+                    </div>
+                </div>
+				
+			</div>
+		</div>
+        </div>
+        <div class="container-fluid" style="background-color:black;height:50px;direction:ltr;text-align:center;color:#c89841;font-family:'Times New Roman';padding:10px;">
+            <div class="row">
+
+        
+
+                <div class="col-md-12">
+                    
+                    <span style="margin-top:auto;margin-bottom:auto;padding:10px;color:#ffa400;font-size:20px;">Designed by samsam © 2025 Kickboxing & Judo™ </span>
+                    
+                </div>
+            </div>
+        </div>
+
+ 
+    
+
+
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/lazyload.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+
+            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color:#000000d4;" >
+  <div class="modal-dialog" role="document" style="max-width:50%;color:white;background-color:black;">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#474747;">
+        <h5 class="modal-title" id="exampleModalLabel" style="color:orange;">Suggestions and criticisms</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="idbody" class="modal-body" style="background-color:#474747;font-size:26px;" >
+               
+          <h5>
+              I would appreciate it if you could help us achieve our goal by providing suggestions and criticisms so that we can make progress
+          </h5>
+ <div id="some_div" style="font-size:25px;color:orangered;" ></div>
+
+  <div id="t1">       
+<div class="form-group">
+  <label for="usr" style="font-size:18px;color:#ffd352;">Full Name:</label>
+  <input type="text" class="form-control" id="fn" name="fn1" placeholder="Full Name" style="background-color:#343434;color:#f3f1f1;">
+</div>
+<div class="form-group">
+  <label for="pwd" style="font-size:18px;color:#ffd352;">From:</label>
+  <input type="text" class="form-control" id="co" name="co1" placeholder="country" style="background-color:#343434;color:#f3f1f1;">
+</div>
+
+<div class="form-group">
+  <label for="comment" style="font-size:18px;color:#ffd352;">Comment:</label>
+  <textarea class="form-control" rows="5" id="te" name="te1" style="background-color:#343434;color:#f3f1f1;"></textarea>
+</div>
+ </div> 
+      </div>
+      <div class="modal-footer" style="background-color:#474747;">
+           <button id="cl" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary" onclick="checkvalue();" >save</button>
+          <button type="button" id="btnsave" runat="server" hidden="hidden"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <script>
+
+           
+         
+            var elem = document.getElementById('some_div');
+            var timeLeft = 5;
+            var timerId = value;
+
+            function countdown() {
+
+         
+
+                if (timeLeft == -1) {
+                    clearTimeout(timerId);
+                    document.getElementById("btnsave").click();
+         
+                } else {
+                    elem.innerHTML = timeLeft + ' please wait a moments';
+                    timeLeft--;
+                }
+            }
+
+            function save() {
+
+                document.getElementById("t1").hidden = "true";
+                document.getElementById("some_div").style = "";
+                var value = setInterval(countdown, 1000);
+
+            }
+
+
+            function checkvalue() {
+
+                var x1 = document.getElementById("fn");
+                var x2 = document.getElementById("te");
+                var x3 = document.getElementById("co");
+
+                var a = 0;
+
+                if (x1.value.trim() === '') {
+
+                    a -= 1;
+                    document.getElementById("fn").focus();
+                    document.getElementById("fn").style.borderColor = "red";
+
+                } else {
+
+                    a += 1;
+                    document.getElementById("fn").style.borderColor = "white";
+
+                }
+
+                if (x2.value.trim() === '') {
+
+                    a -= 1;
+                    document.getElementById("te").focus();
+                    document.getElementById("te").style.borderColor = "red";
+
+                } else {
+
+                    a += 1;
+                    document.getElementById("te").style.borderColor = "white";
+
+                }
+
+                if (x3.value.trim() === '') {
+
+                    a -= 1;
+                    document.getElementById("co").focus();
+                    document.getElementById("co").style.borderColor = "red";
+
+                } else {
+
+                    a += 1;
+                    document.getElementById("co").style.borderColor = "white";
+
+                }
+
+                if (a == 3) {
+
+                    save();
+
+                }
+
+            }
+
+        </script>
+
+
+
+  
+
+    </form>
+</body>
+</html>
