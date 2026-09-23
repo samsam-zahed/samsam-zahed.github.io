@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f4f1e9">
-<meta name="description" content="SAMUEL — استایل از انتخاب تو شروع می‌شود. دسته‌های پوشاک، کفش و اکسسوری را با تصویر کشف کن.">
-<title>SAMUEL — انتخاب تو، استایل تو</title>
+<meta name="description" content="SAMUEL — Your style starts with you. Explore clothing, footwear and accessories through our visual collections.">
+<title>SAMUEL — Your choice. Your style.</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
 :root{--paper:#f4f1e9;--ink:#23251e;--muted:#727468;--line:#d9d8ce;--accent:#c5ce9d;--serif:Georgia,'Times New Roman',serif}
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}
 button,a{-webkit-tap-highlight-color:transparent}
 button{font:inherit}
 button:focus-visible,a:focus-visible{outline:3px solid #72824e;outline-offset:6px}
@@ -25,9 +25,9 @@ h1{font-size:clamp(25px,2.5vw,39px);font-weight:400;line-height:1.65;margin:0;le
 h1 span{color:#7d8565}
 .intro-note{max-width:290px;font-size:13px;font-weight:300;line-height:2.1;margin:0;color:#62665a}
 .note-line{display:block;margin-top:10px;font-size:10px;color:#454b38}
-.note-line b{display:inline-block;background:var(--accent);width:25px;height:25px;text-align:center;line-height:25px;border-radius:50%;margin-left:8px;font-size:15px;font-weight:400}
+.note-line b{display:inline-block;background:var(--accent);width:25px;height:25px;text-align:center;line-height:25px;border-radius:50%;margin-right:8px;font-size:15px;font-weight:400}
 .categories{direction:ltr;display:grid;grid-template-columns:1.05fr 1fr 1fr .95fr;grid-template-rows:repeat(2,clamp(185px,27vh,300px));gap:14px}
-.category{position:relative;padding:0;border:0;overflow:hidden;cursor:pointer;text-align:right;background:#e6e1d5;color:white;isolation:isolate;border-radius:2px}
+.category{position:relative;padding:0;border:0;overflow:hidden;cursor:pointer;text-align:left;background:#e6e1d5;color:white;isolation:isolate;border-radius:2px}
 .category::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(12,17,11,.7));z-index:0;transition:opacity .4s}
 .category img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .85s cubic-bezier(.2,.65,.2,1),filter .5s}
 .category:hover img,.category:focus-visible img{transform:scale(1.045)}
@@ -45,24 +45,24 @@ h1 span{color:#7d8565}
 .hat:hover img,.hat:focus-visible img{transform:scale(1.045)}
 .hat::after{background:linear-gradient(transparent,rgba(12,17,11,.65))}.hat{color:white}.hat .arrow{border-color:#ffffff69}
 .number{position:absolute;top:20px;left:20px;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.12em;z-index:1;color:inherit;opacity:.9}
-.category-label{position:absolute;z-index:1;bottom:25px;left:22px;right:22px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;direction:rtl}
+.category-label{position:absolute;z-index:1;bottom:25px;left:22px;right:22px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;direction:ltr}
 .category-label strong{display:block;font-size:25px;font-weight:500;line-height:1.7}
-.category-label small{display:block;font-family:Arial,sans-serif;direction:ltr;text-align:right;font-size:9px;letter-spacing:.18em;margin-top:4px;opacity:.8}
+.category-label small{display:block;font-family:Arial,sans-serif;direction:ltr;text-align:left;font-size:9px;letter-spacing:.18em;margin-top:4px;opacity:.8}
 .arrow{direction:ltr;flex-shrink:0;display:grid;place-items:center;width:37px;height:37px;border:1px solid #ffffff69;border-radius:50%;font:20px Arial,sans-serif;transition:background .3s,color .3s,transform .3s}
 .hat .arrow{border-color:#62694e70}
 .shoes .category-label,.hat .category-label{bottom:19px;left:18px;right:18px}
 .shoes .category-label strong,.hat .category-label strong{font-size:21px}
 .caption{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0 0;font-size:10px;color:var(--muted)}
 .caption .english{font-family:Arial,sans-serif;letter-spacing:.15em;font-size:9px;direction:ltr}
-.caption .persian{display:flex;align-items:center;gap:8px}
-.caption .persian::before{content:"";width:25px;height:1px;background:#969c85}
+.caption .category-note{display:flex;align-items:center;gap:8px}
+.caption .category-note::before{content:"";width:25px;height:1px;background:#969c85}
 dialog{padding:0;border:0;width:min(820px,calc(100% - 32px));max-height:90dvh;background:var(--paper);color:var(--ink);overflow:auto;box-shadow:0 30px 100px #0004}
 dialog::backdrop{background:#181c17a6;backdrop-filter:blur(7px)}
 .dialog-grid{display:grid;grid-template-columns:1fr 1fr;min-height:480px}
 .dialog-image{width:100%;height:100%;max-height:580px;object-fit:cover;background:#d9dfc9}
 .dialog-copy{padding:75px 32px 40px;display:flex;flex-direction:column;justify-content:center}
 .close{position:absolute;top:17px;right:17px;width:38px;height:38px;background:var(--paper);border:1px solid var(--line);border-radius:50%;cursor:pointer;font-size:24px;line-height:1;z-index:2}
-.dialog-kicker{font:10px Arial,sans-serif;letter-spacing:.18em;direction:ltr;text-align:right;color:var(--muted)}
+.dialog-kicker{font:10px Arial,sans-serif;letter-spacing:.18em;direction:ltr;text-align:left;color:var(--muted)}
 dialog h2{font-size:36px;font-weight:400;margin:15px 0}
 .dialog-description{font-size:14px;line-height:2.2;color:#62665a}
 .availability{font-size:12px;line-height:2;border-top:1px solid var(--line);margin:25px 0 0;padding-top:18px;color:var(--muted)}
@@ -74,32 +74,32 @@ dialog h2{font-size:36px;font-weight:400;margin:15px 0}
 </style>
 </head>
 <body>
-<header class="site-header"><a href="./" class="wordmark" aria-label="SAMUEL — صفحه اصلی">SAMUEL</a></header>
+<header class="site-header"><a href="./" class="wordmark" aria-label="SAMUEL — Home">SAMUEL</a></header>
 <main>
 <section class="intro" aria-labelledby="intro-title">
-<div><p class="eyebrow">THE EVERYDAY EDIT</p><h1 id="intro-title">انتخاب تو، <span>استایل تو.</span></h1></div>
-<p class="intro-note">از یک تصویر شروع کن.<br>چیزی را انتخاب کن که به تو شبیه‌تر است.<span class="note-line"><b aria-hidden="true">↙</b>برای کشف هر دسته، روی تصویر بزن.</span></p>
+<div><p class="eyebrow">THE EVERYDAY EDIT</p><h1 id="intro-title">Your choice. <span>Your style.</span></h1></div>
+<p class="intro-note">Start with an image.<br>Find what feels like you.<span class="note-line"><b aria-hidden="true">↙</b>Tap an image to explore.</span></p>
 </section>
-<section class="categories" aria-label="دسته‌بندی‌های فروشگاه">
-<button class="category jacket" data-category="jacket" aria-label="مشاهده دسته کت و کاپشن"><img src="img/jacket-editorial.webp?v=2" alt="کت قهوه‌ای با طراحی ساده" fetchpriority="high" width="480" height="736"><span class="number" aria-hidden="true">01 /</span><span class="category-label"><span><strong>کت و کاپشن</strong><small>THE OUTERWEAR EDIT</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
-<button class="category shirt" data-category="shirt" aria-label="مشاهده دسته پیراهن"><img src="img/shirt-editorial.webp?v=2" alt="پیراهن لینن آجری" width="540" height="641"><span class="number" aria-hidden="true">02 /</span><span class="category-label"><span><strong>پیراهن</strong><small>A LITTLE CHARACTER</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
-<button class="category jeans" data-category="jeans" aria-label="مشاهده دسته جین"><img src="img/jeans-editorial.webp?v=2" alt="شلوار جین آبی با برش آزاد" width="860" height="1075"><span class="number" aria-hidden="true">03 /</span><span class="category-label"><span><strong>جین</strong><small>ALWAYS IN ROTATION</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
-<button class="category shoes" data-category="shoes" aria-label="مشاهده دسته کفش"><img src="img/shoes-editorial.webp?v=2" alt="کفش جیر کرم و خاکی" width="740" height="740"><span class="number" aria-hidden="true">04 /</span><span class="category-label"><span><strong>کفش</strong><small>MAKE YOUR MOVE</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
-<button class="category hat" data-category="hat" aria-label="مشاهده دسته کلاه"><img src="img/hat-editorial.webp?v=2" alt="کلاه روشن با نوار قهوه‌ای" width="600" height="600"><span class="number" aria-hidden="true">05 /</span><span class="category-label"><span><strong>کلاه</strong><small>THE FINISHING TOUCH</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<section class="categories" aria-label="Shop by category">
+<button class="category jacket" data-category="jacket" aria-label="Explore jackets"><img src="img/jacket-editorial.webp?v=2" alt="Chocolate suede bomber jacket" fetchpriority="high" width="480" height="736"><span class="number" aria-hidden="true">01 /</span><span class="category-label"><span><strong>Jackets</strong><small>THE OUTERWEAR EDIT</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<button class="category shirt" data-category="shirt" aria-label="Explore shirts"><img src="img/shirt-editorial.webp?v=2" alt="Terracotta linen shirt" width="540" height="641"><span class="number" aria-hidden="true">02 /</span><span class="category-label"><span><strong>Shirts</strong><small>A LITTLE CHARACTER</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<button class="category jeans" data-category="jeans" aria-label="Explore denim"><img src="img/jeans-editorial.webp?v=2" alt="Relaxed straight-leg blue jeans" width="860" height="1075"><span class="number" aria-hidden="true">03 /</span><span class="category-label"><span><strong>Denim</strong><small>ALWAYS IN ROTATION</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<button class="category shoes" data-category="shoes" aria-label="Explore shoes"><img src="img/shoes-editorial.webp?v=2" alt="Ivory and taupe suede sneakers" width="740" height="740"><span class="number" aria-hidden="true">04 /</span><span class="category-label"><span><strong>Shoes</strong><small>MAKE YOUR MOVE</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<button class="category hat" data-category="hat" aria-label="Explore hats"><img src="img/hat-editorial.webp?v=2" alt="Ivory straw hat with a brown ribbon" width="600" height="600"><span class="number" aria-hidden="true">05 /</span><span class="category-label"><span><strong>Hats</strong><small>THE FINISHING TOUCH</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
 </section>
-<div class="caption" aria-hidden="true"><span class="persian">پنج دسته. هزار راه برای خودت بودن.</span><span class="english">LESS NOISE. MORE YOU.</span></div>
+<div class="caption" aria-hidden="true"><span class="category-note">Five categories. Endless ways to be you.</span><span class="english">LESS NOISE. MORE YOU.</span></div>
 </main>
 <dialog id="category-dialog" aria-labelledby="category-title" aria-describedby="category-description">
-<button class="close" aria-label="بستن پیش‌نمایش">×</button>
-<div class="dialog-grid"><img class="dialog-image" id="category-image" alt=""><div class="dialog-copy"><span class="dialog-kicker" id="category-kicker"></span><h2 id="category-title"></h2><p class="dialog-description" id="category-description"></p><p class="availability">کالکشن این دسته در حال آماده‌سازی است.<br>محصولات به‌زودی اینجا قرار می‌گیرند.</p><button class="back">بازگشت به دسته‌ها ←</button></div></div>
+<button class="close" aria-label="Close preview">×</button>
+<div class="dialog-grid"><img class="dialog-image" id="category-image" alt=""><div class="dialog-copy"><span class="dialog-kicker" id="category-kicker"></span><h2 id="category-title"></h2><p class="dialog-description" id="category-description"></p><p class="availability">This collection is taking shape.<br>Products will be arriving soon.</p><button class="back">← Back to categories</button></div></div>
 </dialog>
 <script>
 const categories={
-jacket:{title:'کت و کاپشن',kicker:'THE OUTERWEAR EDIT',description:'لایه‌ای که استایلت را کامل می‌کند. از روزهای خنک تا قدم‌های آخر شب.',image:'jacket-editorial.webp?v=2'},
-shirt:{title:'پیراهن',kicker:'A LITTLE CHARACTER',description:'کمی رنگ، کمی جسارت. برای روزهایی که می‌خواهی خودت را بیشتر نشان بدهی.',image:'shirt-editorial.webp?v=2'},
-jeans:{title:'جین',kicker:'ALWAYS IN ROTATION',description:'نقطهٔ شروع ترکیب‌های همیشگی. راحت، بی‌تکلف و به سبک خودت.',image:'jeans-editorial.webp?v=2'},
-shoes:{title:'کفش',kicker:'MAKE YOUR MOVE',description:'هر مسیر، یک شروع تازه. قدم بعدی را به سبک خودت بردار.',image:'shoes-editorial.webp?v=2'},
-hat:{title:'کلاه',kicker:'THE FINISHING TOUCH',description:'جزئیات کوچک، تفاوت‌های بزرگ. آخرین انتخاب برای یک ترکیب متفاوت.',image:'hat-editorial.webp?v=2'}
+jacket:{title:'Jackets',kicker:'THE OUTERWEAR EDIT',description:'The layer that brings it all together. From crisp mornings to late-night walks.',image:'jacket-editorial.webp?v=2'},
+shirt:{title:'Shirts',kicker:'A LITTLE CHARACTER',description:'A little color. A little confidence. For days when you want your personality to show.',image:'shirt-editorial.webp?v=2'},
+jeans:{title:'Denim',kicker:'ALWAYS IN ROTATION',description:'The foundation of your everyday rotation. Relaxed, effortless and entirely your own.',image:'jeans-editorial.webp?v=2'},
+shoes:{title:'Shoes',kicker:'MAKE YOUR MOVE',description:'Every journey starts somewhere. Make your next move in your own style.',image:'shoes-editorial.webp?v=2'},
+hat:{title:'Hats',kicker:'THE FINISHING TOUCH',description:'Small details. Big difference. The finishing touch that makes a look yours.',image:'hat-editorial.webp?v=2'}
 };
 const dialog=document.getElementById('category-dialog');
 document.querySelectorAll('[data-category]').forEach(button=>button.addEventListener('click',()=>{
