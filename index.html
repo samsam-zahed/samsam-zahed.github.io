@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f4f1e9">
-<meta name="description" content="SAMUEL — Your style starts with you. Explore clothing, footwear and accessories through our visual collections.">
+<meta name="description" content="SAMUEL — Your style starts with you. Discover clothing, shoes and accessories for Women, Men, Girls, Boys and Baby.">
 <title>SAMUEL — Your choice. Your style.</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
@@ -26,32 +26,19 @@ h1 span{color:#7d8565}
 .intro-note{max-width:290px;font-size:13px;font-weight:300;line-height:2.1;margin:0;color:#62665a}
 .note-line{display:block;margin-top:10px;font-size:10px;color:#454b38}
 .note-line b{display:inline-block;background:var(--accent);width:25px;height:25px;text-align:center;line-height:25px;border-radius:50%;margin-right:8px;font-size:15px;font-weight:400}
-.categories{direction:ltr;display:grid;grid-template-columns:1.05fr 1fr 1fr .95fr;grid-template-rows:repeat(2,clamp(185px,27vh,300px));gap:14px}
+.categories{direction:ltr;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:clamp(360px,55vh,620px);gap:14px}
 .category{position:relative;padding:0;border:0;overflow:hidden;cursor:pointer;text-align:left;background:#e6e1d5;color:white;isolation:isolate;border-radius:2px}
 .category::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(12,17,11,.7));z-index:0;transition:opacity .4s}
 .category img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .85s cubic-bezier(.2,.65,.2,1),filter .5s}
 .category:hover img,.category:focus-visible img{transform:scale(1.045)}
 .category:hover .arrow{background:var(--paper);color:var(--ink);transform:rotate(-45deg)}
-.jacket{grid-column:1;grid-row:1/3}
-.jacket img{object-position:51% center}
-.shirt{grid-column:2;grid-row:1/3}
-.shirt img{object-position:48% center}
-.jeans{grid-column:3;grid-row:1/3}
-.jeans img{object-position:49% center}
-.shoes{grid-column:4;grid-row:1;background:#d3d3d1}
-.shoes img{object-fit:cover;object-position:center 58%}
-.hat{grid-column:4;grid-row:2;background:#d9dfc9;color:var(--ink)}
-.hat img{object-fit:cover;object-position:center}
-.hat:hover img,.hat:focus-visible img{transform:scale(1.045)}
-.hat::after{background:linear-gradient(transparent,rgba(12,17,11,.65))}.hat{color:white}.hat .arrow{border-color:#ffffff69}
+.category img{object-position:center 30%}
+.category.men img{object-position:center}
 .number{position:absolute;top:20px;left:20px;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.12em;z-index:1;color:inherit;opacity:.9}
-.category-label{position:absolute;z-index:1;bottom:25px;left:22px;right:22px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;direction:ltr}
-.category-label strong{display:block;font-size:25px;font-weight:500;line-height:1.7}
-.category-label small{display:block;font-family:Arial,sans-serif;direction:ltr;text-align:left;font-size:9px;letter-spacing:.18em;margin-top:4px;opacity:.8}
+.category-label{position:absolute;z-index:1;bottom:25px;left:17px;right:17px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;direction:ltr}
+.category-label strong{display:block;font-size:clamp(21px,2vw,28px);font-weight:500;line-height:1.7}
+.category-label small{display:block;font-family:Arial,sans-serif;direction:ltr;text-align:left;font-size:8px;letter-spacing:.12em;margin-top:4px;opacity:.8}
 .arrow{direction:ltr;flex-shrink:0;display:grid;place-items:center;width:37px;height:37px;border:1px solid #ffffff69;border-radius:50%;font:20px Arial,sans-serif;transition:background .3s,color .3s,transform .3s}
-.hat .arrow{border-color:#62694e70}
-.shoes .category-label,.hat .category-label{bottom:19px;left:18px;right:18px}
-.shoes .category-label strong,.hat .category-label strong{font-size:21px}
 .caption{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0 0;font-size:10px;color:var(--muted)}
 .caption .english{font-family:Arial,sans-serif;letter-spacing:.15em;font-size:9px;direction:ltr}
 .caption .category-note{display:flex;align-items:center;gap:8px}
@@ -67,9 +54,8 @@ dialog h2{font-size:36px;font-weight:400;margin:15px 0}
 .dialog-description{font-size:14px;line-height:2.2;color:#62665a}
 .availability{font-size:12px;line-height:2;border-top:1px solid var(--line);margin:25px 0 0;padding-top:18px;color:var(--muted)}
 .back{align-self:flex-start;border:0;border-bottom:1px solid var(--ink);background:transparent;padding:10px 0;margin-top:20px;cursor:pointer;color:var(--ink);font-size:12px}
-@media(min-width:1600px){.categories{grid-template-rows:300px 300px}}
-@media(max-width:1050px){.categories{grid-template-columns:repeat(3,1fr);grid-template-rows:380px 230px}.jacket,.shirt,.jeans{grid-row:1}.shoes{grid-column:1/3;grid-row:2}.shoes img{object-fit:contain}.hat{grid-column:3;grid-row:2}.site-header{height:116px}.intro{min-height:160px}}
-@media(max-width:600px){.site-header{height:105px;margin:0 5%}.wordmark{font-size:53px}main{padding:0 5% 28px}.intro{display:block;padding:26px 0 24px;min-height:0}.eyebrow{font-size:8px;margin-bottom:10px}h1{font-size:27px}.intro-note{max-width:none;margin-top:11px;font-size:11px}.note-line{display:none}.categories{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:340px 290px 220px;gap:10px}.jacket{grid-column:1/3;grid-row:1}.jacket img{object-position:center 32%;object-fit:cover}.shirt{grid-column:1;grid-row:2}.jeans{grid-column:2;grid-row:2}.shoes{grid-column:1;grid-row:3}.shoes img{object-fit:cover}.hat{grid-column:2;grid-row:3}.category-label{bottom:18px;left:15px;right:15px}.category-label strong{font-size:21px}.category-label small{font-size:8px}.arrow{width:30px;height:30px;font-size:17px}.number{left:15px;top:15px}.caption{align-items:flex-start;gap:12px;font-size:9px}.caption .english{font-size:7px;line-height:2}.dialog-grid{grid-template-columns:1fr;min-height:0}.dialog-image{height:240px;object-position:center 35%}.dialog-copy{padding:25px}dialog h2{font-size:28px;margin:10px 0}.availability{margin-top:15px}.close{top:12px;right:12px}}
+@media(max-width:1050px){.categories{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:390px}.site-header{height:116px}.intro{min-height:160px}}
+@media(max-width:600px){.site-header{height:105px;margin:0 5%}.wordmark{font-size:53px}main{padding:0 5% 28px}.intro{display:block;padding:26px 0 24px;min-height:0}.eyebrow{font-size:8px;margin-bottom:10px}h1{font-size:27px}.intro-note{max-width:none;margin-top:11px;font-size:11px}.note-line{display:none}.categories{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:290px;gap:10px}.category.baby{grid-column:1/-1;height:310px}.category.baby img{object-position:center 45%}.category-label{bottom:18px;left:12px;right:12px;gap:6px}.category-label strong{font-size:22px}.category-label small{font-size:7px;letter-spacing:.05em;line-height:1.6}.arrow{width:27px;height:27px;font-size:16px}.number{left:12px;top:15px}.caption{align-items:flex-start;gap:12px;font-size:9px}.caption .english{font-size:7px;line-height:2}.dialog-grid{grid-template-columns:1fr;min-height:0}.dialog-image{height:280px;object-position:center 25%}.dialog-copy{padding:25px}dialog h2{font-size:28px;margin:10px 0}.availability{margin-top:15px}.close{top:12px;right:12px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -80,14 +66,14 @@ dialog h2{font-size:36px;font-weight:400;margin:15px 0}
 <div><p class="eyebrow">THE EVERYDAY EDIT</p><h1 id="intro-title">Your choice. <span>Your style.</span></h1></div>
 <p class="intro-note">Start with an image.<br>Find what feels like you.<span class="note-line"><b aria-hidden="true">↙</b>Tap an image to explore.</span></p>
 </section>
-<section class="categories" aria-label="Shop by category">
-<button class="category jacket" data-category="jacket" aria-label="Explore jackets"><img src="img/jacket-editorial.webp?v=2" alt="Chocolate suede bomber jacket" fetchpriority="high" width="480" height="736"><span class="number" aria-hidden="true">01 /</span><span class="category-label"><span><strong>Jackets</strong><small>THE OUTERWEAR EDIT</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
-<button class="category shirt" data-category="shirt" aria-label="Explore shirts"><img src="img/shirt-editorial.webp?v=2" alt="Terracotta linen shirt" width="540" height="641"><span class="number" aria-hidden="true">02 /</span><span class="category-label"><span><strong>Shirts</strong><small>A LITTLE CHARACTER</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
-<button class="category jeans" data-category="jeans" aria-label="Explore denim"><img src="img/jeans-editorial.webp?v=2" alt="Relaxed straight-leg blue jeans" width="860" height="1075"><span class="number" aria-hidden="true">03 /</span><span class="category-label"><span><strong>Denim</strong><small>ALWAYS IN ROTATION</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
-<button class="category shoes" data-category="shoes" aria-label="Explore shoes"><img src="img/shoes-editorial.webp?v=2" alt="Ivory and taupe suede sneakers" width="740" height="740"><span class="number" aria-hidden="true">04 /</span><span class="category-label"><span><strong>Shoes</strong><small>MAKE YOUR MOVE</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
-<button class="category hat" data-category="hat" aria-label="Explore hats"><img src="img/hat-editorial.webp?v=2" alt="Ivory straw hat with a brown ribbon" width="600" height="600"><span class="number" aria-hidden="true">05 /</span><span class="category-label"><span><strong>Hats</strong><small>THE FINISHING TOUCH</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<section class="categories" aria-label="Shop by collection">
+<button class="category women" data-category="women" aria-label="Explore Women"><img src="img/women-collection.webp" alt="Woman in an oatmeal blazer and relaxed neutral trousers" fetchpriority="high" width="900" height="1350"><span class="number" aria-hidden="true">01 /</span><span class="category-label"><span><strong>Women</strong><small>YOUR EVERYDAY, ELEVATED</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<button class="category men" data-category="men" aria-label="Explore Men"><img src="img/men-collection.webp" alt="Man wearing a chocolate suede jacket and ivory knit" width="900" height="1350"><span class="number" aria-hidden="true">02 /</span><span class="category-label"><span><strong>Men</strong><small>STYLE ON YOUR TERMS</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<button class="category girls" data-category="girls" aria-label="Explore Girls"><img src="img/girls-collection.webp" alt="Girl in a sage green dress and cream sneakers" width="900" height="1350"><span class="number" aria-hidden="true">03 /</span><span class="category-label"><span><strong>Girls</strong><small>MADE FOR HER WORLD</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<button class="category boys" data-category="boys" aria-label="Explore Boys"><img src="img/boys-collection.webp" alt="Boy in an ochre overshirt and beige trousers" width="900" height="1350"><span class="number" aria-hidden="true">04 /</span><span class="category-label"><span><strong>Boys</strong><small>READY FOR EVERY ADVENTURE</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
+<button class="category baby" data-category="baby" aria-label="Explore Baby"><img src="img/baby-collection.webp" alt="Baby in a cream knitted romper on a soft blanket" width="900" height="1350"><span class="number" aria-hidden="true">05 /</span><span class="category-label"><span><strong>Baby</strong><small>LITTLE BEGINNINGS</small></span><span class="arrow" aria-hidden="true">↗</span></span></button>
 </section>
-<div class="caption" aria-hidden="true"><span class="category-note">Five categories. Endless ways to be you.</span><span class="english">LESS NOISE. MORE YOU.</span></div>
+<div class="caption" aria-hidden="true"><span class="category-note">For every age. For every you.</span><span class="english">LESS NOISE. MORE YOU.</span></div>
 </main>
 <dialog id="category-dialog" aria-labelledby="category-title" aria-describedby="category-description">
 <button class="close" aria-label="Close preview">×</button>
@@ -95,11 +81,46 @@ dialog h2{font-size:36px;font-weight:400;margin:15px 0}
 </dialog>
 <script>
 const categories={
-jacket:{title:'Jackets',kicker:'THE OUTERWEAR EDIT',description:'The layer that brings it all together. From crisp mornings to late-night walks.',image:'jacket-editorial.webp?v=2'},
-shirt:{title:'Shirts',kicker:'A LITTLE CHARACTER',description:'A little color. A little confidence. For days when you want your personality to show.',image:'shirt-editorial.webp?v=2'},
-jeans:{title:'Denim',kicker:'ALWAYS IN ROTATION',description:'The foundation of your everyday rotation. Relaxed, effortless and entirely your own.',image:'jeans-editorial.webp?v=2'},
-shoes:{title:'Shoes',kicker:'MAKE YOUR MOVE',description:'Every journey starts somewhere. Make your next move in your own style.',image:'shoes-editorial.webp?v=2'},
-hat:{title:'Hats',kicker:'THE FINISHING TOUCH',description:'Small details. Big difference. The finishing touch that makes a look yours.',image:'hat-editorial.webp?v=2'}
+  "women": {
+    "key": "women",
+    "title": "Women",
+    "kicker": "YOUR EVERYDAY, ELEVATED",
+    "description": "Clothing, shoes and accessories for every side of you.",
+    "image": "women-collection.webp",
+    "alt": "Woman in an oatmeal blazer and relaxed neutral trousers"
+  },
+  "men": {
+    "key": "men",
+    "title": "Men",
+    "kicker": "STYLE ON YOUR TERMS",
+    "description": "From everyday essentials to tailoring, shoes and finishing touches.",
+    "image": "men-collection.webp",
+    "alt": "Man wearing a chocolate suede jacket and ivory knit"
+  },
+  "girls": {
+    "key": "girls",
+    "title": "Girls",
+    "kicker": "MADE FOR HER WORLD",
+    "description": "Everyday outfits, occasionwear, shoes and accessories for growing personalities.",
+    "image": "girls-collection.webp",
+    "alt": "Girl in a sage green dress and cream sneakers"
+  },
+  "boys": {
+    "key": "boys",
+    "title": "Boys",
+    "kicker": "READY FOR EVERY ADVENTURE",
+    "description": "Comfortable clothing, smart outfits, shoes and accessories for busy days.",
+    "image": "boys-collection.webp",
+    "alt": "Boy in an ochre overshirt and beige trousers"
+  },
+  "baby": {
+    "key": "baby",
+    "title": "Baby",
+    "kicker": "LITTLE BEGINNINGS",
+    "description": "Soft clothing, little shoes and everyday essentials for baby girls and boys.",
+    "image": "baby-collection.webp",
+    "alt": "Baby in a cream knitted romper on a soft blanket"
+  }
 };
 const dialog=document.getElementById('category-dialog');
 document.querySelectorAll('[data-category]').forEach(button=>button.addEventListener('click',()=>{
